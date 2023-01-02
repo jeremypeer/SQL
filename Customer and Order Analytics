@@ -62,3 +62,10 @@ GROUP BY location
 HAVING COUNT(JanSales.orderID) > 2
 AND location <> ''
 AND location <> 'Purchase Address';
+
+#10 How many of each type of headphone were sold in February?
+SELECT Product, Sum(quantity) as total_qty
+FROM FebSales
+WHERE Product like '%Headphone%'
+GROUP BY product;
+
