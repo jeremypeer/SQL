@@ -1,0 +1,48 @@
+'Jeremy Peer
+'Test 2B
+'Visual Basic Programming
+
+'This program asks for 2 numbers from the user. Then the user can click a button to display the numbers and it sorts them from largest to smallest.
+
+
+Option Explicit On
+Option Strict On
+
+Public Class Form1
+
+    Private Sub HighFirst(ByRef First As Integer, ByRef Second As Integer)
+
+        If Second > First Then
+            Dim intTemp As Integer
+            intTemp = First
+            First = Second
+            Second = intTemp
+        End If
+
+    End Sub
+
+    Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click
+        Me.Close()
+
+    End Sub
+
+    Private Sub btnLoad_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnLoad.Click
+
+        Dim First As Integer
+        Dim Second As Integer
+
+        Integer.TryParse(txtFirst.Text, First)
+        Integer.TryParse(txtSecond.Text, Second)
+
+        Call HighFirst(First, Second)
+
+        lstBox.Items.Add(First.ToString)
+        lstBox.Items.Add(Second.ToString)
+
+    End Sub
+End Class
+
+ 
+
+
+ 
