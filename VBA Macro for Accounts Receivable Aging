@@ -4,6 +4,8 @@ and FOR loops to determine if a customer is current or past due on their account
 It also does a vlookup to a separate file on the network drive to pullin more data. 
 Variables were created to count the rows of data needed because each csv file is a different size.
 Lastly, it formats the information and top row on the spreadsheet for easier reading. 
+This project was necessary because the system was not calculating late payments correctly due to different customers
+having different payment terms (net10 days, net30 days, net60 days ect...)
 
 Sub Aging_by_customer_terms()
 
