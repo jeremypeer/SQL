@@ -77,5 +77,14 @@ ON FebSales.orderID = customers.order_id
 WHERE orderid <> '' 
 AND orderid <> 'Order ID'
 
+#12 What was the average quantity of products purchased per account in February?
+SELECT SUM(Quantity)/COUNT(customers.acctnum)
+FROM BIT_DB.FebSales
+LEFT JOIN BIT_DB.customers
+ON FebSales.orderID = customers.order_id
+WHERE orderid <> '' 
+AND orderid <> 'Order ID'
+
+
 
 
