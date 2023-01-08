@@ -44,7 +44,7 @@ FROM BIT_DB.spotifydata
 ORDER BY popularity desc
 LIMIT 10
 
-#Use a common table expression (CTE) to show most popluar artists
+#Use a common table expression (CTE) to show most popluar artists with a popularity rating of 90 or above.
 WITH popularity_average_CTE AS (
 SELECT Spotifydata.artist_name,
 AVG(Spotifydata.popularity) AS average_popularity
