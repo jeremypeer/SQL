@@ -1,7 +1,6 @@
 #This VBA was created in my service to a past employer to take a csv file and import it into excel and create a customer aging (to show current, and past due invoices).
-It then adds some columns and inserts calculation formulas such as CASE statements
-and FOR loops to determine if a customer is current or past due on their account for a specific invoice. 
-It also does a vlookup to a separate file on the network drive to pullin more data. 
+It then adds some columns, inserts calculation formulas, and uses CASE statements and FOR loops 
+to determine if a customer is current or past due on their account for a specific invoice.  
 Variables were created to count the rows of data needed because each csv file is a different size.
 Lastly, it formats the information and top row on the spreadsheet for easier reading. 
 This project was necessary because the system was not calculating late payments correctly due to different customers
