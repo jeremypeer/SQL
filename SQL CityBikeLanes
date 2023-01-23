@@ -1,5 +1,7 @@
-/* Single Table
-7 Columns (id, year_installed, year_updated, street, width_feet, safetyrating, protected)
+/* 
+Single Table: CityBikeLanes
+7 Columns 
+(id, year_installed, year_updated, street, width_feet, safetyrating, protected)
 
 Query Requirements: 
 Create a list of all the bike lanes, both safety ratings for each lane, the average safety rating for each lane, 
